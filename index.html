@@ -9,40 +9,123 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="./assets/favicon.ico">
 </head>
 <body>
     <div class="container">
         <header class="header">
             <div class="column-left">
-                <img src="assets/img/foto-3.png" alt="Foto" width="199">
+                <img class="header__user-pic" src="./assets/img/foto-5.png" alt="Foto" width="288">
             </div>
             <div class="column-rihgt">
                 <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a class="nav-link" href="#summary">Summary</a></li>
-                        <li><a class="nav-link" href="#educatio">Education</a></li>
-                        <li><a class="nav-link" href="#work-experience">Work experience</a></li>
-                        <li><a class="nav-link" href="#code-examples">Code Examples</a></li>
+                    <ul class="nav__list">
+                        <li><a class="nav__link" href="#summary">Summary</a></li>
+                        <li><a class="nav__link" href="#skills">Skills</a></li>
+                        <li><a class="nav__link" href="#work-experience">Work experience</a></li>
+                        <li><a class="nav__link" href="#education">Education</a></li>
+                        <li><a class="nav__link" href="#code-example">Code Examples</a></li>
+                        <li><a class="nav__link" href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
-                <h1 class="header-title">Julia Prozorova</h1>
-                <p>Junior Frontend Developer</p>
+                <h1 class="header__title">Julia Prozorova</h1>
+                <p class="header__note">Junior Frontend Developer</p>
             </div>
         </header>
         <main class="main">
-
+            <div class="column-left">
+                <section id="skills">
+                    <h2 class="main__title">Skills</h2>
+                    <ul class="main__list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap 4</li>
+                        <li>JavaScript Basics</li>
+                        <li>jQuery</li>
+                        <li>Git, GitHab</li>
+                        <li>Figma, Photoshop<br>(for web development)</li>
+                        <li>CMS WordPress</li>
+                        <li>English:<br>Pre-Intermediate<br>(А2/В1)</li>
+                    </ul>
+                </section>
+                <section id="contacts">
+                    <h2 class="main__title">Contacts</h2>
+                    <ul class="main__list">
+                        <li>E-mail:<br><a class="main__link" href="mail-to:julia54rus@gmail.com">julia54rus@gmail.com</a></li>
+                        <li>Telegram:<br><a class="main__link" href="https://github.com/JRasins" target="_blank">@JRasins</a></li>
+                        <li>Discord:<br>Julia (@JRasins)</li>
+                        <li>GitHab:<br><a class="main__link" href="https://github.com/JRasins" target="_blank">@JRasins</a></li>
+                        <li>Location:<br>Saint-Petersburg, Russia</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="column-rihgt">
+                <section id="summary">
+                    <h2 class="main__title">Summary</h2>
+                    <p>I have some <a class="main__link" href="#work-experience">experience</a> in front-end development and want to grow professionally further. I think that my main strengths are attention to detail, responsibility and teamwork skills.</p>
+                </section>
+                <section id="work-experience">
+                    <h2 class="main__title">Work-experience</h2>
+                    <ul class="main__list">
+                        <li><b>Content manager</b> of information portal about banks: writing, editing, updating the content of the portal and social networks.</li>
+                        <li><b>Website editor</b> for a company selling climate equipment:
+                            <ul class="main__list">
+                                <li>Layout of landing pages, product cards and other pages of the site (HTML, CSS, Bootstrap, JavaScript, jQuery).</li>
+                                <li>Work width site admin panel (WordPress) including editing and creating web pages, html and css blog article markup, work with various settings of the admin panel.</li>
+                                <li>Site change management: interaction with marketers, designers, programmers.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="education">
+                    <h2 class="main__title">Education</h2>
+                    <h3 class="main__title-small">University:</h3>
+                    <p>NOVOSIBIRSK STATE UNIVERSITY OF ECONOMICS AND MANAGEMENT<br>
+                        Faculty of Management and Commerce<br>
+                        Specialty management organization<br>
+                        Specialist qualification</p>
+                    <h3 class="main__title-small">Courses:</h3>
+                    <ul class="main__list">
+                        <li><a class="main__link" href="https://htmlacademy.ru/courses/" target="_blank">HTML Academy trainer</a></li>
+                        <li><a class="main__link" href="https://learn.javascript.ru/" target="_blank">learn.javascript.ru</a></li>
+                        <li><a class="main__link" href="https://rs.school/js-stage0/" target="_blank">RS School</a> (in process)<br><b>Educational project:</b> <a class="main__link" href="https://jrasins.github.io/rsschool-cv/" target="_blank">Curriculum vitae</a></li>
+                    </ul>
+                </section>
+                <section id="code-example">
+                    <h2 class="main__title">Code-example</h2>
+                    <p><b>Description:</b> A program that prints all numbers from 1 to 100 to the console, with two exceptions. For numbers that are multiples of 3, "Fizz" is displayed instead of a number, and for numbers that are multiples of 5 (but not 3) "Buzz" is displayed instead of a number.</p>
+                    <pre class="main__code">
+                        <code>
+for (let nuber = 1; nuber < 101; nuber += 1) {
+    if (nuber % 3 == 0) {
+        if (nuber % 5 == 0){
+        console.log('FizzBuzz');
+        } else{
+        console.log('Fizz');
+        }
+    } else {
+        if (nuber % 5 == 0){
+        console.log('Buzz');
+        } else {
+        console.log(nuber);
+        }
+    } 
+}
+                        </code>
+                    </pre>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <a class="footer__my-githab" href="https://github.com/JRasins" target="_blank">
-                <img class="footer__my-githab__logo" src="assets/img/githab.png" alt="">
+                <img class="footer__my-githab__logo" src="./assets/img/githab.png" alt="">
                 My githab
             </a>
             <div class="footer__year">
                 2022
             </div>
             <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
-                <img class="footer__rsschool__logo" src="assets/img/rs_school_js.svg" alt="RS SCHOOL JS">
+                <img class="footer__rsschool__logo" src="./assets/img/rs_school_js.svg" alt="RS SCHOOL JS">
             </a>
         </footer>
     </div>
