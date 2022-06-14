@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth; 
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center
+}
+.column-left{
+    width: 20%;
+}
+.column-rihgt{
+    width: 80%;
+}
+.nav{
+    background-color: #EBEBEB;
+}
+.nav-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+.nav-link{
+    padding: 15px 20px;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    background-color: #25262B;
+    color: #ffffff;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #EBEBEB;
+}
+.footer__my-githab{
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+.footer__my-githab:hover{
+    color:#6E6E6E;
+}
+.footer__my-githab__logo{
+    width: 40px;
+    margin-right: 10px;
+}
+.footer__rsschool__logo{
+    width: 100px;
+}
