@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
     -moz--transition: 0.5s;
     transition: 0.5s;
 }
-.nav__link:hover, 
+.nav__link:hover,
 .nav__link:focus {
     background-color: #DE8E15;
 }
@@ -96,7 +96,6 @@ body {
 .main__title-small {
     margin: 20px 0 10px;
     font-size: 1.4em;
-
 }
 .main .column-left .main__title {
     font-weight: 400;
@@ -197,7 +196,7 @@ body {
     .main {
         flex-direction: column;
     }
-    .column-left, 
+    .column-left,
     .column-rihgt {
         width: 100%;
     }
@@ -214,7 +213,6 @@ body {
 @media screen and (max-width:767px) {
     .nav__list {
         flex-direction: column;
-
     }
     .nav__link {
         line-height: 30px;
